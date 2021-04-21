@@ -8,7 +8,7 @@ public class Main {
         do {
             Scanner in = new Scanner(System.in);
             System.out.println("============================");
-            System.out.println("|   MENU SELECTION DEMO    |");
+            System.out.println("|   MENU SELECTION         |");
             System.out.println("============================");
             System.out.println("| Options:                 |");
             System.out.println("|        1. Run Program    |");

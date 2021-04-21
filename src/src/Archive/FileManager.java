@@ -7,7 +7,7 @@ public class FileManager {
     public static String read(String fileName){
         String content = "";
         try {
-            FileReader file = new FileReader(fileName);
+            FileReader file = new FileReader("src/src/Archive/"+fileName);
             BufferedReader bf = new BufferedReader(file);
 
             while(bf.ready()){
@@ -22,7 +22,7 @@ public class FileManager {
 
     public static boolean write(String fileName, String content){
         try {
-            FileWriter file = new FileWriter("Archive/"+fileName, true);
+            FileWriter file = new FileWriter("src/src/Archive/"+fileName, true);
             file.append(content);
             file.close();
         } catch (Exception e) {
@@ -34,7 +34,7 @@ public class FileManager {
 
     public static void flush(String fileName){
         try {
-            FileWriter file = new FileWriter(fileName);
+            FileWriter file = new FileWriter("src/src/Archive/"+fileName);
             file.flush();
             file.close();
         } catch (Exception e) {

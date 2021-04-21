@@ -34,6 +34,11 @@ public class VM {
         } else System.exit(0);
     }
 
+    public void output(){
+        System.out.println("Output:");
+        System.out.println(fileManager.read("OF.txt"));
+    }
+
     private boolean validation(String archive){
         int open = 0, close = 0;
         for (char c: archive.toCharArray()){

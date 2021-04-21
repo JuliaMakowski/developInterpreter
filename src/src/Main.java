@@ -26,6 +26,7 @@ public class Main {
                 vm.run();
                 break;
             case 2:
+                vm.output();
                 break;
             case 0:
                 System.out.println("Ending program. Have a nice day!");

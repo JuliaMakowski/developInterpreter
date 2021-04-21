@@ -2,8 +2,8 @@ import java.util.Scanner;
 import VM.VM;
 
 public class Main {
+    public static VM vm = new VM();
     public static void main(String[] args) {
-        VM vm = new VM();
         int opc = -1;
         do {
             Scanner in = new Scanner(System.in);
@@ -23,6 +23,7 @@ public class Main {
     public static void menuOptions(int opc){
         switch (opc){
             case 1:
+                vm.run();
                 break;
             case 2:
                 break;

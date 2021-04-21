@@ -22,7 +22,7 @@ public class FileManager {
 
     public static boolean write(String fileName, String content){
         try {
-            FileWriter file = new FileWriter(fileName, true);
+            FileWriter file = new FileWriter("Archive/"+fileName, true);
             file.append(content);
             file.close();
         } catch (Exception e) {

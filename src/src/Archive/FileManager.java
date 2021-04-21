@@ -20,7 +20,7 @@ public class FileManager {
         return content;
     }
 
-    public static boolean write(String fileName, char content){
+    public static boolean write(String fileName, String content){
         try {
             FileWriter file = new FileWriter(fileName, true);
             file.append(content);
@@ -32,7 +32,7 @@ public class FileManager {
         return true;
     }
 
-    public static void clean(String fileName){
+    public static void flush(String fileName){
         try {
             FileWriter file = new FileWriter(fileName);
             file.flush();

@@ -20,7 +20,7 @@ public class FileManager {
         return content;
     }
 
-    public static boolean write(String fileName, String content){
+    public static boolean write(String fileName, char content){
         try {
             FileWriter file = new FileWriter(fileName, true);
             file.append(content);
